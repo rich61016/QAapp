@@ -67,11 +67,9 @@ class QuestionViewController: UIViewController {
         }else{
             print(rightAnswer)
         }
-            
         if questionCount < 5 {
             startGame()
         }
-            
         else {
             next_Page()
         }

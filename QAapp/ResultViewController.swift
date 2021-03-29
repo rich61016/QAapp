@@ -24,21 +24,17 @@ class ResultViewController: UIViewController {
     
 
     @IBAction func paly_again(_ sender: Any) {
-        
-        restart() 
-    }
-    
-    // 再玩一次Function
-    func restart() {
         self.dismiss(animated: false, completion: nil)
     }
+    
+
     
     // 總分計算Function
     func totalScore() {
         if total_score == 5 {
             lv_image.image = UIImage(named: "大師球.png")
         }
-        else if total_score >= 4 && total_score < 2 {
+        else if total_score <= 4 && total_score > 1 {
             lv_image.image = UIImage(named: "超級球.png")
         }
         else {
